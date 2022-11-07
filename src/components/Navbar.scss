@@ -1,0 +1,10 @@
+@import '../pages/variables.scss';
+
+.navbar {
+    background-color: $primary-color;
+    .nav-link {
+     color: $secondary-color;
+     font-weight: 600;
+     font-size: 20px;        
+    }
+} 
