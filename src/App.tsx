@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { ShoppingCartProvider } from "./context/ShoppingCartContext";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -7,7 +8,7 @@ import Store from "./pages/Store";
 function App() {
 
   return (
-    <>
+    <ShoppingCartProvider>
       <Navbar/>
             <Routes>
                <Route path="/" element={<Home/>} />
@@ -15,7 +16,7 @@ function App() {
                <Route path="/about" element={<About/>} />
             </Routes>
       <Footer/>
-    </>
+    </ShoppingCartProvider>
   )
 }
 
