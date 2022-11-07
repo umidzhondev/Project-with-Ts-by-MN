@@ -1,0 +1,31 @@
+.card-wrapper { 
+    overflow: hidden;
+    .card {
+        &-button {
+            background-color: #000;
+            border: none;
+            border-radius: 16px; 
+            &:hover{
+                background-color: transparent;
+                color: #000;
+                border: 1px solid #000;
+            }
+        } 
+        &-img {
+            transition: 0.5s ease;
+            &:hover{ 
+                opacity: 0.9;
+                transform: scale(1.2);
+            }
+        }
+        &-title {
+            font-weight: 700;
+        } 
+        &-image--wrapper {
+            height: 400px;
+            overflow: hidden;
+        }
+      
+    } 
+    
+} 
